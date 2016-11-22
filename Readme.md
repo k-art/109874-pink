@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Козлов](https://up.htmlacademy.ru/adaptive/9/user/109874).
-* Наставник: Илья Сачев.
+* Наставник: [Илья Сачев](https://up.htmlacademy.ru/adaptive/9/user/11939).
 
 ---
 
