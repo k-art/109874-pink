@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pink: Галерея</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo  page-header__logo"><a href="">Pink</a></div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <span class="main-nav__toggle" type="button"></span>
+        <div class="main-nav__container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item a"><a href="">Главная</a></li>
+            <li class="main-nav__item a"><a>Фотографии</a></li>
+            <li class="main-nav__item a"><a href="">Конкурс</a></li>
+            <li class="main-nav__item a"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <h1 class="page-title">Фотографии пользователей</h1>
+    </header>
+
+    <section class="user-gallery">
+      <div class="user-gallery__container">
+        <h2 class="user-gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+
+        <article class="user-post">
+          <div class="user-post__container">
+            <a href=""><img src="http://placehold.it/320x137" alt="" class="user-post__image"></a>
+            <h2 class="user-post__title">Анна <span>(5 минут назад)</span></h2>
+            <p class="user-post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <button type="button" class="user-post__rating">Нравится: 215</button>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <div class="user-post__container">
+            <a href=""><img src="http://placehold.it/280x180" alt="" class="user-post__image"></a>
+            <h2 class="user-post__title">Левон <span>(5 часов назад)</span></h2>
+            <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button type="button" class="user-post__rating">Нравится: 356</button>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <div class="user-post__container">
+            <a href=""><img src="http://placehold.it/280x180" alt="" class="user-post__image"></a>
+            <h2 class="user-post__title">Антон <span>(12 часов назад)</span></h2>
+            <p class="user-post__text">Соседи будут рады!</p>
+            <button type="button" class="user-post__rating">Нравится: 666</button>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <div class="user-post__container">
+            <a href=""><img src="http://placehold.it/280x180" alt="" class="user-post__image"></a>
+            <h2 class="user-post__title">Борис <span>(20 часов назад)</span></h2>
+            <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button type="button" class="user-post__rating">Нравится: 215</button>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <div class="user-post__container">
+            <a href=""><img src="http://placehold.it/280x180" alt="" class="user-post__image"></a>
+            <h2 class="user-post__title">Сергей <span>(25 часов назад)</span></h2>
+            <p class="user-post__text">Самая кубанская в мире!</p>
+            <button type="button" class="user-post__rating">Нравится: 4</button>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <div class="user-post__container">
+            <a href=""><img src="http://placehold.it/280x180" alt="" class="user-post__image"></a>
+            <h2 class="user-post__title">Максим <span>(40 часов назад)</span></h2>
+            <p class="user-post__text">Где снег-то?</p>
+            <button type="button" class="user-post__rating">Нравится: 150</button>
+          </div>
+        </article>
+
+        <article class="user-post">
+          <div class="user-post__container">
+            <a href=""><img src="http://placehold.it/280x180" alt="" class="user-post__image"></a>
+            <h2 class="user-post__title">Надежда <span>(45 часов назад)</span></h2>
+            <p class="user-post__text">Все GM и взаимные лайки!</p>
+            <button type="button" class="user-post__rating">Нравится: 2560</button>
+          </div>
+        </article>
+
+
+        <!-- Форму добавления нового поста не очень понял как делать... -->
+        <article class="new-post">
+          <div class="new-post__container">
+           <h2 class="new-post__title">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
+           <img src="http://placehold.it/280x374" alt="" class="new-post__image">
+            <form action="#">
+              <input type="file">
+              <div class="image-filter">
+                <div class="image-filter__item">
+                  <button class="image-filter__btn" type="button">Обрезка</button>
+                  <input type="range">
+                </div>
+
+                <div class="image-filter__item">
+                  <button class="image-filter__btn" type="button">Цвет</button>
+                  <input type="range">
+                </div>
+
+                <div class="image-filter__item">
+                  <button class="image-filter__btn" type="button">Контраст</button>
+                  <input type="range">
+                </div>
+              </div>
+
+              <button class="btn" type="submit">Запостить</button>
+
+              <button class="btn" type="reset">Отмена</button>
+            </form>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="logo  page-footer__logo"><a href=""><img src="" alt="">Pink</a></div>
+        <ul class="social-list">
+          <li class="social-list__item"><a href="">Twitter</a></li>
+          <li class="social-list__item"><a href="">Facebook</a></li>
+          <li class="social-list__item"><a href="">Youtube</a></li>
+        </ul>
+        <div class="copyright">Разработано <a href="">HTML Academy</a></div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

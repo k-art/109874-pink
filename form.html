@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pink: Страница формы</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo  page-header__logo"><a href="">Pink</a></div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <span class="main-nav__toggle" type="button"></span>
+        <div class="main-nav__container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item a"><a href="">Главная</a></li>
+            <li class="main-nav__item a"><a href="">Фотографии</a></li>
+            <li class="main-nav__item a"><a>Конкурс</a></li>
+            <li class="main-nav__item a"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+
+    <section class="form">
+      <div class="form__container">
+        <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+        <form action="#">
+          <ul class="user">
+            <li class="user__name"><label for="surname">Фамилия: </label><input  type="text" id="surname" placeholder="Укажите фамилию *"></li>
+            <li class="user__name"><label for="name">Имя: </label><input  type="text" id="name" placeholder="Введите ваше имя *"></li>
+            <li class="user__name"><label for="patronymic">Отчество: </label><input  type="text" id="patronymic" placeholder="Ну и отчество тоже"></li>
+          </ul>
+
+          <ul class="user-exp">
+            <h3>Ваши безбашенные достижения в путешествии</h3>
+            <li class="user-exp__option"><input type="checkbox" id="1" checked><label for="1">Сделал селфи с акулой</label></li>
+            <li class="user-exp__option"><input type="checkbox" id="2" checked><label for="2">Обгорел на пляже</label></li>
+            <li class="user-exp__option"><input type="checkbox" id="3"><label for="3">Видел Чака Норриса</label></li>
+            <li class="user-exp__option"><input type="checkbox" id="4"><label for="4">Накупил сувениров</label></li>
+            <li class="user-exp__option"><input type="checkbox" id="5" checked><label for="5">Удержал башню</label></li>
+            <li class="user-exp__option"><input type="checkbox" id="6"><label for="6">Разгромил отель</label></li>
+          </ul>
+
+          <ul class="user-contacts">
+            <li class="user-contacts__item"><label for="phone">Номер телефона </label><input type="tel" id="phone" placeholder="Номер, пожалуйста"></li>
+            <li class="user-contacts__item"><label for="mail">Адресок почты</label><input type="email" id="mail" placeholder="Введите почту *"></li>
+          </ul>
+
+          <ul class="user-device">
+            <h3>С каким приложением путешествовали?</h3>
+            <li class="user-device__option"><input type="radio" id="ios" name="app" checked><label for="ios">Pink для iOS</label></li>
+            <li class="user-device__option"><input type="radio" id="android" name="app"><label for="android">Pink на Android</label></li>
+            <li class="user-device__option"><input type="radio" id="ms" name="app"><label for="ms">Windows Phone</label></li>
+          </ul>
+
+          <ul class="user-emotion">
+            <li class="user-emotion__field"><label for="emotion">Опишите свои эмоции </label><textarea name="" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea></li>
+          </ul>
+
+          <button type="submit">Отправить форму</button>
+        </form>
+        <span class="form__legend"><b>*</b> &mdash; Обязательные поля</span>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="logo  page-footer__logo"><a href=""><img src="" alt="">Pink</a></div>
+        <ul class="social-list">
+          <li class="social-list__item"><a href="">Twitter</a></li>
+          <li class="social-list__item"><a href="">Facebook</a></li>
+          <li class="social-list__item"><a href="">Youtube</a></li>
+        </ul>
+        <div class="copyright">Разработано <a href="">HTML Academy</a></div>
+      </div>
+    </footer>
+
+  </body>
+</html>
