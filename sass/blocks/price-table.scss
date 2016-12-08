@@ -1,0 +1,35 @@
+.price-table {
+
+}
+
+.price-table__head {
+  padding: 20px;
+  background-color: $color-darkblue;
+  box-sizing: border-box;
+}
+
+.price-table__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price-table__bill {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price-table__head {
+  min-width: 280px;
+}
+
+.price-table__cell {
+
+}

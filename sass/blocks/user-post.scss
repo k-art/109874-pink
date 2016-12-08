@@ -1,0 +1,39 @@
+.user-post {
+  margin-bottom: 20px;
+  background: #f2f2f2;
+  color: $color-darkblue;
+}
+
+.user-post__message {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.user-post__title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+
+  & span {
+    font-weight: 100;
+  }
+}
+
+.user-post__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-post__rating {
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: $color-pink;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

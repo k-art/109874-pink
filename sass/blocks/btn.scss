@@ -1,0 +1,47 @@
+.btn {
+  padding: 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  background-color: transparent;
+
+  &--download {
+    border-color: #fff;
+  }
+
+  &--form {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background: #2aab6d;
+  }
+
+  &--gallery-form {
+    border-color: $color-pink;
+    color: $color-pink;
+  }
+
+  &--reset {
+    border-color: rgba($color-darkblue, 0.3);
+    color: rgba($color-darkblue, 0.3);
+  }
+
+  &--non-acitve {
+    border-color: rgba($color-darkblue, 0.1);
+    color: rgba($color-darkblue, 0.1);
+    cursor: default;
+  }
+}

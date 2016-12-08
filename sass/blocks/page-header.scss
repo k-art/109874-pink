@@ -1,0 +1,26 @@
+.page-header {
+  padding-bottom: 35px;
+  min-height: 200px;
+  background-color: #1d2632;
+  background-image:   url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain cover;
+  background-position: bottom;
+  color: #fff;
+  &--main {
+    min-height: 425px;
+    background-image:
+    url(../img/iphone-hand-mobile@1x.png),
+    url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-size: contain cover;
+    background-position: bottom;
+  }
+}
+
+.page-header__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+  text-align: center;
+}

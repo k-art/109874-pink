@@ -1,0 +1,22 @@
+.review {
+  display: none;
+  margin: 0;
+
+  &--active {
+    display: block;
+  }
+}
+
+.review__author {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+}
+
+.review__content {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-darkblue;
+}
