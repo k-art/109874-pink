@@ -2,6 +2,7 @@
 
 
 @import "variables.scss";
+@import "mixins.scss";
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
 
@@ -32,4 +33,3 @@
 @import "blocks/new-post.scss";
 @import "blocks/form-photo.scss";
 @import "blocks/image-filter.scss";
-

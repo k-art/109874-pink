@@ -20,12 +20,10 @@
   &--selectable {
     background: #f2f2f2;
   }
+}
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.form__group-list {
+  @include no-list;
 }
 
 .form__group-field {
@@ -91,7 +89,7 @@
   text-transform: uppercase;
   color: $color-darkblue;
 
-  & b {
+  b {
     font-weight: 400;
     color: $color-pink;
   }
