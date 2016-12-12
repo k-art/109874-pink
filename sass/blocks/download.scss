@@ -1,0 +1,15 @@
+.download {
+  background-color: #1d2631;
+  color: #fff;
+}
+
+.download__list {
+  @include no-list;
+}
+
+.download__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(#fff, 0.7);
+}
