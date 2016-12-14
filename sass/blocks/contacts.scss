@@ -3,10 +3,13 @@
   background-image: url(../img/bg-map-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 }
 
 .contacts__container {
+  margin: 0 auto;
   background: #fff;
+  text-align: center;
 }
 
 .contacts__title {
@@ -17,4 +20,8 @@
   font-weight: 300;
   color: $color-darkblue;
   text-align: center;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+  }
 }

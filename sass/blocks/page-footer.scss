@@ -1,5 +1,22 @@
 .page-footer {
+  padding: 35px 0;
+
   &--main {
     display: none;
+
+    @media (min-width: 660px) {
+      display: block;
+    }
   }
+}
+
+.page-footer__container {
+  @include container;
+  font-size: 0;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33.33%;
 }

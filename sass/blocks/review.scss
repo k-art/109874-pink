@@ -1,22 +1,47 @@
 .review {
+  position: relative;
   display: none;
   margin: 0;
 
   &--active {
     display: block;
   }
+
+  @media (min-width: 660px) {
+    padding-bottom: 80px;
+  }
 }
 
 .review__author {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   font-style: normal;
   color: #000;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  span {
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-darkblue;
+
+    @media (min-width: 660px) {
+      display: block;
+    }
+  }
 }
 
 .review__content {
   font-size: 14px;
   line-height: 30px;
   color: $color-darkblue;
+  text-align: center;
 }

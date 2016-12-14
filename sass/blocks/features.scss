@@ -5,6 +5,11 @@
   background-repeat: no-repeat;
   background-position: 50% 110%;
 
+  @media (min-width: 660px) {
+    padding-bottom: 0;
+    background-position: 20% 50%;
+
+  }
 }
 
 .features__title {
@@ -14,4 +19,8 @@
   font-weight: 300;
   color: $color-darkblue;
   text-align: center;
+}
+
+.features__container {
+  @include container;
 }

@@ -1,9 +1,15 @@
 .copyright {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33.33%;
+  text-align: right;
   font-size: 14px;
   line-height: 18px;
   color: $color-darkblue;
+
 }
 
 .copyright__link svg {
+  vertical-align: middle;
   fill: $color-pink;
 }
