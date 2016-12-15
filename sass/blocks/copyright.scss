@@ -1,12 +1,18 @@
 .copyright {
-  display: inline-block;
-  vertical-align: middle;
-  width: 33.33%;
-  text-align: right;
+  display: block;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 18px;
   color: $color-darkblue;
+  text-align: center;
 
+
+  @media (min-width: 660px) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    text-align: right;
+  }
 }
 
 .copyright__link svg {

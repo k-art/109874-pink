@@ -1,12 +1,20 @@
 .page-header {
   position: relative;
-  min-height: 200px;
+  min-height: 495px;
   background-color: #1d2632;
   background-image:   url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: contain cover;
   background-position: bottom;
   color: #fff;
+
+  @media (min-width: 660px) {
+    min-height: 695px;
+  }
+
+  @media (min-width: 980px) {
+    min-height: 395px;
+  }
 
   &--main {
     min-height: 425px;
@@ -35,10 +43,15 @@
 }
 
 .page-header__title {
+  margin-top: 35px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: 660px) {
+    margin-top: 70px;
+  }
 }
 
 .page-header__logo {

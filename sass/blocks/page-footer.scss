@@ -16,7 +16,14 @@
 }
 
 .page-footer__logo {
-  display: inline-block;
-  vertical-align: middle;
-  width: 33.33%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    text-align: left;
+  }
 }

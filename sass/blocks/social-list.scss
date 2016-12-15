@@ -2,13 +2,17 @@
   @include no-list;
   display: inline-block;
   vertical-align: middle;
-  width: 33.33%;
+  width: 100%;
   text-align: center;
   font-size: 0;
+
+  @media (min-width: 660px) {
+    width: 33.33%;
+  }
 }
 
 .social-list__item {
-  margin: 015px;
+  margin: 15px;
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
