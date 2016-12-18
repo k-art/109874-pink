@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="logo  page-header__logo"><a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="logo Pink"></a></div>
+    <header class="page-header page-header--nojs">
+      <div class="logo  page-header__logo">
+        <div class="page-header__logo-container">
+          <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="logo Pink"></a>
+          <button class="btn btn--nav-toggle" type="button">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-            <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-          </svg>
-        </button>
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
@@ -25,17 +29,17 @@
         </div>
       </nav>
 
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-header__title">Конкурс на самое безбашенное <br>путешествие с Пинк</h1>
     </header>
 
     <main class="main-content">
 
       <section class="form">
         <div class="form__container">
-          <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+          <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></h2>
 
-          <form action="#">
-            <fieldset class="form__group">
+          <form class="form__group-wrapper" action="#">
+            <fieldset class="form__group form__group--name">
               <div class="form__group-field">
                 <label class="form__label" for="surname">Фамилия: </label>
                 <input class="form__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
@@ -52,76 +56,80 @@
               </div>
             </fieldset>
 
-            <fieldset class="form__group form__group--selectable">
-              <h3 class="form__group-title">Ваши безбашенные достижения в путешествии</h3>
+            <fieldset class="form__group form__group--selectable form__group--checkbox">
+              <legend class="form__group-title" align="center">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__group-list">
-                <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="checkbox" name="achievements" id="achievements-1" checked>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-1" checked>
                   <label class="form__label form__label--selectable" for="achievements-1">Сделал селфи с акулой</label>
                 </li>
-                <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="checkbox" name="achievements" id="achievements-2" checked>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-2" checked>
                   <label class="form__label form__label--selectable" for="achievements-2">Обгорел на пляже</label>
                 </li>
-                <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="checkbox" name="achievements" id="achievements-3">
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-3">
                   <label class="form__label form__label--selectable" for="achievements-3">Видел Чака Норриса</label>
                 </li>
-                <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="checkbox" name="achievements" id="achievements-4">
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-4">
                   <label class="form__label form__label--selectable" for="achievements-4">Накупил сувениров</label>
                 </li>
-                <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="checkbox" name="achievements" id="achievements-5" checked>
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-5" checked>
                   <label class="form__label form__label--selectable" for="achievements-5">Удержал башню</label>
                 </li>
-                <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="checkbox" name="achievements" id="achievements-6">
+                <li class="form__group-field form__group-field--selectable form__group-field--checkbox">
+                  <input class="form__field form__field--checkbox" type="checkbox" name="achievements" id="achievements-6">
                   <label class="form__label form__label--selectable" for="achievements-6">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__group">
-              <div class="form__group-field">
-                <label class="form__label" for="phone">Номер телефона </label>
-                <input class="form__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+            <fieldset class="form__group form__group--contacts">
+              <legend class="form__group-title form__group-title--contacts" align="center">Контактная информация</legend>
+              <div class="form__group-field form__group-field--contact">
+                <label class="form__label form__label--contact" for="phone">Номер телефона </label>
+                <input class="form__field form__field--contact" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
               </div>
 
-              <div class="form__group-field">
-                <label class="form__label" for="mail">Адресок почты </label>
-                <input class="form__field" type="email" name="mail" id="mail" placeholder="Введите почту *">
+              <div class="form__group-field form__group-field--contact">
+                <label class="form__label form__label--contact" for="mail">Адресок почты </label>
+                <input class="form__field form__field--contact" type="email" name="mail" id="mail" placeholder="Введите почту *">
               </div>
             </fieldset>
 
-            <fieldset class="form__group form__group--selectable">
-              <h3 class="form__group-title">С каким приложением путешествовали?</h3>
+            <fieldset class="form__group form__group--selectable form__group--radio">
+              <legend class="form__group-title" align="center">С каким приложением путешествовали?</legend>
               <ul class="form__group-list">
                 <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="radio" name="app-choice" id="ios" name="app" checked>
+                  <input class="form__field form__field--radio" type="radio" name="app-choice" id="ios" name="app" checked>
                   <label class="form__label form__label--selectable" for="ios">Pink для iOS</label>
                 </li>
                 <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="radio" name="app-choice" id="android" name="app">
+                  <input class="form__field form__field--radio" type="radio" name="app-choice" id="android" name="app">
                   <label class="form__label form__label--selectable" for="android">Pink на Android</label>
                 </li>
                 <li class="form__group-field form__group-field--selectable">
-                  <input class="form__field" type="radio" name="app-choice" id="ms" name="app">
+                  <input class="form__field form__field--radio" type="radio" name="app-choice" id="ms" name="app">
                   <label class="form__label form__label--selectable" for="ms">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--textarea">
+              <legend class="form__group-title" align="center">Опишите свои эмоции</legend>
               <div class="form__group-field">
-                <label class="form__label form__label--textarea" for="emotions">Опишите свои эмоции</label>
                 <textarea class="form__field form__field--textarea" name="emotions" id="emotions" cols="24" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
 
-            <button class="btn btn--form" type="submit">Отправить форму</button>
+            <div class="form__group form__group--button">
+              <button class="btn btn--form" type="submit">Отправить форму</button>
+              <span class="form__legend"><b>*</b> &mdash; Обязательные поля</span>
+            </div>
           </form>
-          <div class="form__legend"><b>*</b> &mdash; Обязательные поля</div>
+
         </div>
       </section>
 

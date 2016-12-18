@@ -1,24 +1,142 @@
-.form {
-  padding-top: 30px;
-  padding-bottom: 50px;
+.form__container {
+  margin: 0 auto;
+  font-size: 0;
+
+  @media (min-width: 660px) {
+    @include container;
+  }
 }
 
 .form__title {
-  margin-top: 15px;
-  margin-bottom: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 280px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: $color-darkblue;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    margin-top: 95px;
+    margin: 70px;
+    font-size: 18px;
+    width: 500px;
+  }
+
+  @media (min-width: 980px) {
+    width: 770px;
+  }
+
+  span {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: block;
+    }
+
+    @media (min-width: 980px) {
+      display: inline;
+    }
+  }
+}
+
+.form__group-wrapper {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form__group {
-  padding-top: 30px;
+  flex-basis: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 70px;
   padding-bottom: 30px;
   border: none;
 
+  @media (min-width: 660px) {
+    margin-bottom: 55px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 45px;
+    padding-bottom: 0;
+    border: 2px solid #e5e5e5;
+
+    &--name {
+      order: 1;
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+
+      @media (min-width: 980px) {
+        margin-right: auto;
+        flex-basis: 435px;
+        box-sizing: border-box;
+      }
+    }
+
+    &--checkbox {
+      order: 4;
+
+      @media (min-width: 980px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* как сделать чтобы элементы с чекбоксами встали как на десктопе? или сделать flex-direction:row и потом ордер поменять?  */
+      }
+    }
+
+    &--contacts {
+      order: 3;
+
+      @media (min-width: 980px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        /* это правило только в firefox работает почему-то... */
+      }
+    }
+
+    &--radio {
+      order: 2;
+
+      @media (min-width: 980px) {
+        flex-basis: 435px;
+        box-sizing: border-box;
+      }
+    }
+
+    &--textarea {
+      order: 5;
+    }
+
+    &--button {
+      order: 6;
+      border: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+
   &--selectable {
+    padding-top: 110px;
     background: #f2f2f2;
+
+    @media (min-width: 660px) {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      background: #fff;
+    }
   }
 }
 
@@ -29,11 +147,72 @@
 .form__group-field {
   margin-bottom: 15px;
 
+  @media (min-width: 660px) {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   &--selectable {
     margin-bottom: 50px;
 
+    @media (min-width: 660px) {
+      margin-bottom: 45px;
+    }
+
     &:last-child {
       margin-bottom: 20px;
+    }
+  }
+
+  &--contact {
+
+    @media (min-width: 660px) {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: baseline;
+    }
+
+    @media (min-width: 980px) {
+      margin-bottom: 20px;
+      flex-basis: 375px;
+
+    }
+  }
+
+  &--checkbox {
+
+  }
+}
+
+.form__group-title {
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  transform: translate(-50%, 0);
+  display: block;
+  width: 230px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-pink;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    padding: 0 30px;
+    position: relative;
+    transform: none;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+
+  &--contacts {
+    @media (max-width: 659px) {
+      display: none;
     }
   }
 }
@@ -54,43 +233,48 @@
     color: $color-darkblue;
   }
 
-  &--textarea {
-    text-align: center;
+  &--contact {
+    @media (min-width: 660px) {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
   }
-}
-
-.form__group-title {
-  margin-top: 10px;
-  margin-bottom: 45px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $color-pink;
-  text-align: center;
 }
 
 .form__field {
   box-sizing: border-box;
   padding: 15px 20px;
+  width: 100%;
   font-size: 18px;
   line-height: 30px;
   color: $color-darkblue;
+  border: 2px solid #e5e5e5;
+
+  &--checkbox, &--radio {
+    width: auto;
+  }
 
   &--textarea {
-    width: 280px;
+    margin: 0 auto;
     height: 200px;
+    resize: none;
   }
 }
 
 .form__legend {
+  display: block;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: $color-darkblue;
+  text-align: center;
 
   b {
     font-weight: 400;
     color: $color-pink;
+  }
+
+  @media (min-width: 660px) {
+    align-self: center;
   }
 }

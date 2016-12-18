@@ -16,17 +16,56 @@
   border-radius: 50px;
   background-color: transparent;
 
+  &--nav-toggle {
+    position: relative;
+    z-index: 1;
+    margin-top: 22px;
+    padding: 0;
+    float: right;
+    display: block;
+    width: auto;
+    border: none;
+    border-radius: 0;
+    outline: none;
+
+    @media (min-width: 660px) {
+      margin-top: 45px;
+    }
+
+    @media (min-width: 980px) {
+      display: none;
+    }
+  }
+
   &--download {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
     border-color: #fff;
+
+    @media (min-width: 660px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 980px) {
+      font-size: 21px;
+      margin-bottom: 65px;
+    }
   }
 
   &--form {
+    display: block;
+    margin: 0 auto;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
     line-height: 30px;
     text-transform: uppercase;
     background: #2aab6d;
+
+    @media (min-width: 660px) {
+      margin: 0;
+    }
   }
 
   &--gallery-form {

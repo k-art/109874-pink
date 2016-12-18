@@ -1,7 +1,19 @@
+.price-table {
+
+  /* Как лучше отцентровать таблицу на мобильном? */
+
+  width: 100%;
+}
+
 .price-table__head {
   padding: 20px;
   background-color: $color-darkblue;
   box-sizing: border-box;
+
+  &:first-of-type {
+    background-color: transparent;
+  }
+
 }
 
 .price-table__title {
@@ -24,4 +36,25 @@
 
 .price-table__head {
   min-width: 280px;
+
+  @media (min-width: 660px) {
+    min-width: 25%;
+  }
+}
+
+.price-table__cell {
+  padding: 15px 25px;
+  background: #fff;
+
+  @media (min-width: 660px) {
+    padding: 15px 15px;
+  }
+
+  @media (min-width: 980px) {
+    min-width: 15px 25px;
+  }
+}
+
+.price-table__row {
+  width: 100%;
 }

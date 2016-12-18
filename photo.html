@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="logo  page-header__logo"><a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="logo Pink"></a></div>
+    <header class="page-header page-header--nojs">
+      <div class="logo  page-header__logo">
+        <div class="page-header__logo-container">
+          <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="logo Pink"></a>
+          <button class="btn btn--nav-toggle" type="button">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-            <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-          </svg>
-        </button>
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
@@ -25,15 +29,15 @@
         </div>
       </nav>
 
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <h1 class="page-header__title">Фотографии <br>пользователей</h1>
     </header>
 
     <main class="main-content">
       <section class="user-gallery">
-        <div class="user-gallery__container">
+
           <h2 class="user-gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
 
-          <article class="user-post">
+          <article class="user-post user-post--panorama">
             <div class="user-post__container">
               <a href="#"><img src="img/panorama-mobile@1x.jpg" alt="панорама" class="user-post__image" width="320" height="137"></a>
               <div class="user-post__message">
@@ -44,6 +48,8 @@
 
             </div>
           </article>
+
+        <div class="user-gallery__container">
 
           <article class="user-post">
             <div class="user-post__container">

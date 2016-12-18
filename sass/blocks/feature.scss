@@ -3,10 +3,50 @@
   line-height: 24px;
   font-weight: 700;
   color: #000;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
 }
 
 .feature__text {
   font-size: 14px;
   line-height: 24px;
   color: $color-darkblue;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+}
+
+.feature__link {
+  color: $color-pink;
+}
+
+.feature {
+
+  @media (min-width: 660px) {
+    padding-left: 50%;
+    display: block;
+    width: 310px;
+
+    }
+
+  &--self-one {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: block;
+      margin-top: 95px;
+      padding-bottom: 115px;
+    }
+
+    @media (min-width: 980px) {
+      margin-top: 160px;
+      padding-left: 40%;
+      width: auto;
+    }
+  }
 }
