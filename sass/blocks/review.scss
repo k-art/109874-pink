@@ -5,14 +5,21 @@
 
   &--active {
     display: block;
-  }
 
-  @media (min-width: 660px) {
-    padding-bottom: 80px;
+    @media (min-width: 660px) {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: 980px) {
+      margin-top: 180px;
+    }
   }
 }
 
 .review__author {
+  margin-bottom: 14px;
   display: block;
   font-size: 18px;
   line-height: 30px;
@@ -22,9 +29,14 @@
   text-align: center;
 
   @media (min-width: 660px) {
-    position: absolute;
+    order: 2;
+    font-size: 20px;
     bottom: 0;
     width: 100%;
+  }
+
+  @media (min-width: 980px) {
+    font-size: 24px;
   }
 
   span {
@@ -36,12 +48,30 @@
     @media (min-width: 660px) {
       display: block;
     }
+
+    @media (min-width: 980px) {
+      font-size: 18px;
+    }
   }
 }
 
 .review__content {
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 30px;
   color: $color-darkblue;
   text-align: center;
+
+  @media (min-width: 660px) {
+    order: 1;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 980px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+  }
 }

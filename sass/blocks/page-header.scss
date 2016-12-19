@@ -17,13 +17,14 @@
   }
 
   &--main {
+    margin-bottom: 270px;
     min-height: 425px;
     background-image:
       url(../img/iphone-hand-mobile@1x.png),
       url(../img/bg-back-mobile@1x.jpg);
     background-repeat: no-repeat no-repeat;
     background-size: contain cover;
-    background-position: center;
+    background-position: center bottom, bottom;
 
     @media (min-width: 660px) {
       margin-bottom: 0;
@@ -56,20 +57,19 @@
 
 .page-header__logo {
   position: absolute;
+  left: 20px;
+  top: 22px;
   width: 100%;
+  z-index: 2;
 
-  img {
-    position: relative;
-    z-index: 1;
-    margin-top: 22px;
-
-    @media (min-width: 660px) {
-      margin-top: 45px;
-    }
+  @media (min-width: 660px) {
+    top: 45px;
   }
 }
 
-.page-header__logo-container {
-  @include container;
-  @include clearfix;
+@media (min-width: 660px) {
+  .page-header__logo-wrapper {
+    position: relative;
+    @include container;
+  }
 }

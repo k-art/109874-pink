@@ -1,4 +1,84 @@
+.feature {
+  padding-top: 18px;
+  padding-bottom: 13px;
+
+  @media (min-width: 660px) {
+    padding-left: 50%;
+    padding-top: 22px;
+    display: block;
+    width: 310px;
+  }
+
+  @media (min-width: 980px) {
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+
+  &--self-one {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: block;
+      margin: 0 auto;
+      padding: 50%;
+      width: 100%;
+      padding-top: 95px;
+      padding-bottom: 115px;
+      background: #fff;
+      box-sizing: border-box;
+
+      .feature__title {
+        margin-bottom: 7px;
+        width: 170px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      .feature__text {
+        margin-bottom: 15px;
+        width: 310px;
+      }
+    }
+
+    @media (min-width: 980px) {
+      margin: 0;
+      padding-left: 40%;
+      padding-top: 125px;
+      width: auto;
+      background: #f2f2f2;
+
+      .feature__title {
+        margin-bottom: 20px;
+        padding: 0 15px;
+        width: 300px;
+      }
+
+      .feature__text {
+        margin-bottom: 35px;
+        padding: 0 10px;
+        width: 530px;
+        text-align: left;
+      }
+
+      .feature__link {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &__self-one-wrapper {
+    @include container;
+    @include clearfix;
+  }
+}
+
 .feature__title {
+  margin-top: 0;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -8,9 +88,19 @@
   @media (min-width: 660px) {
     text-align: left;
   }
+
+  @media (min-width: 980px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .feature__text {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   color: $color-darkblue;
@@ -19,34 +109,16 @@
   @media (min-width: 660px) {
     text-align: left;
   }
+
+  @media (min-width: 980px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .feature__link {
   color: $color-pink;
-}
-
-.feature {
-
-  @media (min-width: 660px) {
-    padding-left: 50%;
-    display: block;
-    width: 310px;
-
-    }
-
-  &--self-one {
-    display: none;
-
-    @media (min-width: 660px) {
-      display: block;
-      margin-top: 95px;
-      padding-bottom: 115px;
-    }
-
-    @media (min-width: 980px) {
-      margin-top: 160px;
-      padding-left: 40%;
-      width: auto;
-    }
-  }
 }

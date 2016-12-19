@@ -1,5 +1,9 @@
 .contacts-item {
+  margin-bottom: 15px;
+
   @media (min-width: 660px) {
+    padding-top: 15px;
+    padding-bottom: 10px;
     display: inline-block;
     vertical-align: top;
     width: 45%;
@@ -11,13 +15,17 @@
 }
 
 .contacts-item__title {
-  margin-top: 25px;
+  margin: 0;
   margin-bottom: 5px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: $color-darkblue;
+
+  @media (min-width: 980px) {
+    margin-bottom: 22px;
+  }
 }
 
 .contacts-item__content {
