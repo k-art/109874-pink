@@ -1,5 +1,6 @@
 .social-list {
   @include no-list;
+  margin-bottom: 25px;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
@@ -12,7 +13,7 @@
 }
 
 .social-list__item {
-  margin: 15px;
+  margin: 25px;
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;

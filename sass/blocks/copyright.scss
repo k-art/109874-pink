@@ -13,9 +13,14 @@
     width: 33.33%;
     text-align: right;
   }
+
+  @media (min-width: 980px) {
+    font-size: 18px;
+  }
 }
 
 .copyright__link svg {
+  padding-left: 13px;
   vertical-align: middle;
   fill: $color-pink;
 }
