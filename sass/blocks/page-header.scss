@@ -1,15 +1,15 @@
 .page-header {
   position: relative;
-  min-height: 495px;
+  min-height: 235px;
   background-color: #1d2632;
-  background-image:   url(../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-size: contain cover;
-  background-position: bottom;
+  background-size: auto;
+  background-position: top;
   color: #fff;
 
   @media (min-width: 660px) {
-    min-height: 695px;
+    min-height: 440px;
   }
 
   @media (min-width: 980px) {
@@ -17,13 +17,14 @@
   }
 
   &--main {
-    min-height: 425px;
+    margin-bottom: 270px;
+    min-height: 460px;
     background-image:
       url(../img/iphone-hand-mobile@1x.png),
       url(../img/bg-back-mobile@1x.jpg);
     background-repeat: no-repeat no-repeat;
-    background-size: contain cover;
-    background-position: center;
+    background-size: auto, cover;
+    background-position: center bottom, bottom;
 
     @media (min-width: 660px) {
       margin-bottom: 0;
@@ -43,7 +44,7 @@
 }
 
 .page-header__title {
-  margin-top: 35px;
+  margin-top: 30px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -51,25 +52,30 @@
 
   @media (min-width: 660px) {
     margin-top: 70px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (min-width: 980px) {
+    margin-top: 60px;
   }
 }
 
 .page-header__logo {
   position: absolute;
+  left: 20px;
+  top: 22px;
   width: 100%;
+  z-index: 2;
 
-  img {
-    position: relative;
-    z-index: 1;
-    margin-top: 22px;
-
-    @media (min-width: 660px) {
-      margin-top: 45px;
-    }
+  @media (min-width: 660px) {
+    top: 45px;
   }
 }
 
-.page-header__logo-container {
-  @include container;
-  @include clearfix;
+@media (min-width: 660px) {
+  .page-header__logo-wrapper {
+    position: relative;
+    @include container;
+  }
 }

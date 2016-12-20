@@ -1,4 +1,19 @@
+.reviews {
+  padding-top: 42px;
+  padding-bottom: 40px;
+
+  @media (min-width: 660px) {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+
+  @media (min-width: 980px) {
+    padding-bottom: 10px;
+  }
+
+}
+
 .reviews__container {
-  padding: 50px;
   @include container;
 }
