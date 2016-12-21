@@ -4,27 +4,27 @@
   padding-bottom: 33px;
   background: rgba(#000, 0.3);
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
     padding-top: 45px;
     padding-bottom: 40px;
   }
 
   &--closed {
 
-    @media (max-width: 979px) {
+    @media (max-width: 959px) {
       padding-top: 33px;
       padding-bottom: 33px;
       background: rgba(#000, 0.3);
     }
 
-    @media (min-width: 660px) and (max-width: 979px) {
+    @media (min-width: 660px) and (max-width: 959px) {
       padding-top: 55px;
       padding-bottom: 55px;
     }
   }
 
   &--closed .main-nav__item {
-    @media (max-width: 979px) {
+    @media (max-width: 959px) {
       display: none;
     }
   }
@@ -53,7 +53,7 @@
       padding-top: 110px;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 960px) {
       padding-top: 45px;
       padding-bottom: 45px;
       background: rgba(#000, 0.3);
@@ -79,7 +79,7 @@
     top: -10px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
     display: none;
   }
 
@@ -104,7 +104,7 @@
 .main-nav__container {
   margin: 0 auto;
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
     @include container;
     @include clearfix;
   }
@@ -113,7 +113,7 @@
 .main-nav__list {
   @include no-list;
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
     float: right;
     width: 700px;
     font-size: 0;
@@ -127,7 +127,7 @@
   border-bottom: 1px solid #000;
   border-top: 1px solid #485461;
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
     margin-left: 80px;
     display: inline-block;
     font-size: 18px;
@@ -150,7 +150,7 @@
     text-transform: uppercase;
     color: #fff;
 
-    @media (min-width: 980px) {
+    @media (min-width: 960px) {
       padding: 0;
       line-height: 18px;
       font-weight: 400;

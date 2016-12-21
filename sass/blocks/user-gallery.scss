@@ -1,13 +1,27 @@
 .user-gallery__title {
   display: block;
+  padding: 0 20px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 50px;
+  width: 280px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: $color-darkblue;
   text-align: center;
+
+  @media (min-width: 660px) {
+    margin-top: 93px;
+    margin-bottom: 75px;
+    font-size: 18px;
+    width: 500px;
+  }
+
+  @media (min-width: 960px) {
+    margin-bottom: 70px;
+    width: 610px;
+  }
 }
 
 .user-gallery__container {
@@ -16,5 +30,12 @@
 
   @media (min-width: 660px) {
     @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-basis: 300px;
   }
 }

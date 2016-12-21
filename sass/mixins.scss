@@ -1,12 +1,12 @@
 @mixin container {
-  width: 280px;
   margin: 0 auto;
+  width: 280px;
 
   @media (min-width: 660px) {
     width: 620px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
     width: 940px;
   }
 }

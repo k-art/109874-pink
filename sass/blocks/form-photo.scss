@@ -1,5 +1,12 @@
 .form-photo {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background: #f2f2f2;
+}
+
+.form-photo__image-container {
+  margin: 0 auto;
+}
+.form-photo__file {
+  display: none;
 }
