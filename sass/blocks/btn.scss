@@ -72,12 +72,14 @@
   }
 
   &--gallery-form {
+    margin: 0 auto;
     margin-bottom: 15px;
+    display: block;
     border-color: $color-pink;
     color: $color-pink;
   }
 
-  &--reset {
+  &--gallery-form-reset {
     border-color: rgba($color-darkblue, 0.3);
     color: rgba($color-darkblue, 0.3);
   }

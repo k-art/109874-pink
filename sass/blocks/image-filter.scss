@@ -1,8 +1,15 @@
 .image-filter {
   padding-top: 40px;
-  margin-bottom: 100px;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 0;
   text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: 660px) {
+    padding: 0;
+    border: none;
+  }
 }
 
 input[type="range"] {
@@ -18,8 +25,47 @@ input[type="range"] {
   display: inline-block;
   vertical-align: middle;
 
+  @media (min-width: 660px) {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 280px;
+    border-bottom: 1px solid #e5e5e5;
+    fill: $color-pink;
+    text-align: left;
+  }
+
+
+  @media (max-width: 559px) {
+    /* скрытие range на мобильных*/
+    .image-filter-range {
+      display: none;
+    }
+
+    &--active .image-filter-range {
+      display: block;
+    }
+  }
+
   &--active {
     fill: $color-pink;
+  }
+
+  .image-filter-range {
+    position: absolute;
+    left: -20px;
+    bottom: -30px;
+    width: 240px;
+    height: 2px;
+    background: $color-darkblue;
+
+    @media (min-width: 660px) {
+      left: auto;
+      bottom: auto;
+      top: 50%;
+      right: 0;
+      width: 204px;
+    }
   }
 }
 

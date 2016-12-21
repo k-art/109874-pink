@@ -6,14 +6,31 @@
   background-position: bottom;
   background-size: cover;
 
+  @media #{$retina} {
+    background-image: url(../img/bg-map-mobile@2x.jpg);
+    background-size: 320px auto;
+  }
+
   @media (min-width: 660px) {
     margin-top: 50px;
     padding-bottom: 380px;
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+
+    @media #{$retina} {
+      background-image: url(../img/bg-map-tablet@2x.jpg);
+      background-size: 700px auto;
+    }
   }
 
   @media (min-width: 960px) {
     margin-top: 60px;
     padding-bottom: 500px;
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+
+    @media #{$retina} {
+      background-image: url(../img/bg-map-desktop@2x.jpg);
+      background-size: 1200px auto;
+    }
   }
 }
 
