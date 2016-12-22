@@ -1,6 +1,8 @@
 .feature {
   padding-top: 18px;
   padding-bottom: 13px;
+  background-repeat: no-repeat;
+  background-position: 50% top;
 
   @media (min-width: 660px) {
     padding-left: 50%;
@@ -11,11 +13,40 @@
 
   @media (min-width: 960px) {
     padding: 0;
+    padding-top: 355px;
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
     font-size: 18px;
     box-sizing: border-box;
+    background-repeat: no-repeat;
+
+    &--img-sad {
+      background-image: url(../img/iphone-screen-1-desktop@1x.png);
+
+      @media #{$retina} {
+        background-image: url(../img/iphone-screen-1-desktop@2x.png);
+        background-size: 292px auto;
+      }
+    }
+
+    &--img-normal {
+      background-image: url(../img/iphone-screen-2-desktop@1x.png);
+
+      @media #{$retina} {
+        background-image: url(../img/iphone-screen-2-desktop@2x.png);
+        background-size: 292px auto;
+      }
+    }
+
+    &--img-fun {
+      background-image: url(../img/iphone-screen-3-desktop@1x.png);
+
+      @media #{$retina} {
+        background-image: url(../img/iphone-screen-3-desktop@2x.png);
+        background-size: 292px auto;
+      }
+    }
   }
 
   &--self-one {
@@ -24,55 +55,66 @@
     @media (min-width: 660px) {
       display: block;
       margin: 0 auto;
-      padding: 50%;
+      padding: 0;
       width: 100%;
-      padding-top: 95px;
-      padding-bottom: 115px;
       background: #fff;
       box-sizing: border-box;
-
-      .feature__title {
-        margin-bottom: 7px;
-        width: 170px;
-        font-size: 30px;
-        line-height: 40px;
-      }
-
-      .feature__text {
-        margin-bottom: 15px;
-        width: 310px;
-      }
     }
 
     @media (min-width: 960px) {
       margin: 0;
-      padding-left: 40%;
-      padding-top: 125px;
       width: auto;
       background: #f2f2f2;
-
-      .feature__title {
-        margin-bottom: 20px;
-        padding: 0 15px;
-        width: 300px;
-      }
-
-      .feature__text {
-        margin-bottom: 35px;
-        padding: 0 10px;
-        width: 530px;
-        text-align: left;
-      }
-
-      .feature__link {
-        padding-left: 20px;
-      }
     }
   }
 
   &__self-one-wrapper {
+    position: relative;
     @include container;
-    @include clearfix;
+
+    @media (min-width: 660px) {
+      padding-top: 95px;
+      padding-bottom: 115px;
+      padding-left: 310px;
+      box-sizing: border-box;
+      background-image: url(../img/clock-tablet@1x.png);
+      background-repeat: no-repeat;
+      background-position: left 42%;
+
+      @media #{$retina} {
+        background-image: url(../img/clock-tablet@2x.png);
+        background-size: 238px auto;
+      }
+    }
+
+    @media (min-width: 960px) {
+      padding-top: 128px;
+      padding-bottom: 120px;
+      padding-left: 350px;
+
+      background-image: url(../img/clock-desktop@1x.png);
+      background-position: left 35%;
+
+      @media #{$retina} {
+        background-image: url(../img/clock-tablet@2x.png);
+        background-size: 298px auto;
+      }
+    }
+
+
+/*     &:before {
+      content: "24";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 280px;
+      font-size: 96px;
+      line-height: 280px;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: middle;
+    } */
   }
 }
 
@@ -87,6 +129,13 @@
 
   @media (min-width: 660px) {
     text-align: left;
+
+    &--self-one-block {
+      margin-bottom: 7px;
+      width: 170px;
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   @media (min-width: 960px) {
@@ -96,6 +145,11 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
+
+    &--self-one-block {
+      padding: 0 15px;
+      width: 300px;
+    }
   }
 }
 
@@ -108,6 +162,11 @@
 
   @media (min-width: 660px) {
     text-align: left;
+
+    &--self-one-block {
+      margin-bottom: 15px;
+      width: 300px;
+    }
   }
 
   @media (min-width: 960px) {
@@ -116,9 +175,20 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+
+    &--self-one-block {
+      margin-bottom: 35px;
+      padding: 0 15px;
+      width: 530px;
+      text-align: left;
+    }
   }
 }
 
 .feature__link {
   color: $color-pink;
+
+  @media (min-width: 960px) {
+    padding-left: 15px;
+  }
 }
