@@ -8,12 +8,17 @@
   }
 
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
+    padding-top: 187px;
     padding-bottom: 10px;
+    background-image: url(../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center 21%;
   }
 
 }
 
 .reviews__container {
+  position: relative;
   @include container;
 }

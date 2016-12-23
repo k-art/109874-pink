@@ -11,12 +11,17 @@
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
       <div class="page-header__logo-wrapper">
         <div class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="logo Pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo Pink">
+          </picture>
         </div>
       </div>
 
-<!--  <nav class="main-nav main-nav--opened">-->
-      <nav class="main-nav main-nav--closed">
+      <!--  main-nav--opened
+            main-nav--closed  -->
+      <nav class="main-nav main-nav--opened">
         <div class="main-nav__toggle-wrapper">
           <button class="main-nav__toggle" type="button"></button>
         </div>
@@ -78,23 +83,23 @@
         <h2 class="features__title"><span>Устали от серости мегаполиса?</span><span>Нам есть, что вам <br>предложить!</span></h2>
 
         <div class="features__container">
-          <div class="feature">
+          <div class="feature feature--img-sad">
             <h3 class="feature__title">Поднимает настроение</h3>
             <p class="feature__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
-          <div class="feature">
+          <div class="feature feature--img-normal">
             <h3 class="feature__title">Меняет мир вокруг</h3>
             <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-          <div class="feature">
+          <div class="feature feature--img-fun">
             <h3 class="feature__title">Заводит новых друзей</h3>
             <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых.</p>
           </div>
         </div>
         <div class="feature feature--self-one">
           <div class="feature__self-one-wrapper">
-            <h3 class="feature__title">Эффект на 24 часа!</h3>
-            <p class="feature__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <h3 class="feature__title feature__title--self-one-block">Эффект на 24 часа!</h3>
+            <p class="feature__text feature__text--self-one-block">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="#" class="feature__link">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -123,6 +128,8 @@
             <button class="slider__toggle" type="button"></button>
             <button class="slider__toggle" type="button"></button>
           </div>
+          <button class="slider__arrow slider__arrow--left" type="button"></button>
+          <button class="slider__arrow slider__arrow--right" type="button"></button>
         </div>
       </section>
 
@@ -213,17 +220,17 @@
       <section class="contacts">
         <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="contacts__container">
-          <div class="contacts-item">
+          <div class="contacts-item contacts-item--call">
             <h3 class="contacts-item__title">Звоните:</h3>
             <div class="contacts-item__content"><a href="tel:+78125556666">+7 (812) 555-66-66</a></div>
           </div>
 
-          <div class="contacts-item">
+          <div class="contacts-item contacts-item--write">
             <h3 class="contacts-item__title">Пишите:</h3>
             <div class="contacts-item__content"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
           </div>
 
-          <div class="contacts-item">
+          <div class="contacts-item contacts-item--come">
             <h3 class="contacts-item__title">Приезжайте в гости:</h3>
             <div class="contacts-item__content">ул. Большая <br>Конюшенная, 19/8</div>
           </div>
@@ -233,7 +240,14 @@
 
     <footer class="page-footer page-footer--main">
       <div class="page-footer__container">
-        <div class="logo  page-footer__logo"><img src="img/logo-pink-blue-mobile.svg" alt="logo"></div>
+        <div class="page-footer__logo">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo Pink">
+            </picture>
+          </a>
+        </div>
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#" title="Twitter">

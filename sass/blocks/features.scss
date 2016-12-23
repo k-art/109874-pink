@@ -1,26 +1,27 @@
 .features {
   margin-top: 30px;
-  padding-bottom: 305px;
   background-color: #f2f2f2;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
-  background-position: 50% 106%;
+  background-position: 50% 21%;
 
   @media (min-width: 660px) {
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
-    background-position: 20% 50%;
+    background-position: 50% 17%;
   }
 
-  @media (min-width: 980px) {
-    background-image: none;
+  @media (min-width: 960px) {
+    background-image: url(../img/bg-triangle-white.svg);
+    background-position: 0% 21%;
+    background-size: auto;
   }
 }
 
 .features__title {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   margin-bottom: 0;
   background-color: #fff;
   font-size: 24px;
@@ -31,15 +32,15 @@
 
   @media (min-width: 660px) {
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     margin-top: 50px;
     font-size: 40px;
     line-height: 48px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: 960px) {
     margin-top: 70px;
-    padding-bottom: 80px;
+    padding-bottom: 75px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -58,16 +59,36 @@
 }
 
 .features__container {
-  padding-top: 35px;
+  padding-top: 55px;
+  padding-bottom: 305px;
   @include container;
 
-  @media (min-width: 660px) {
-    padding-top: 50px;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 50% 109%;
+
+  @media #{$retina} {
+    background-image: url(../img/iphone-screen-mobile@2x.png);
+    background-size: 157px auto;
   }
 
-  @media (min-width: 980px) {
-    padding-top: 350px;
+
+  @media (min-width: 660px) {
+    padding-top: 70px;
+    padding-bottom: 0;
+    background-image: url(../img/iphone-screen-3-tablet@1x.png);
+    background-position: left bottom;
+
+    @media #{$retina} {
+      background-image: url(../img/iphone-screen-3-tablet@2x.png);
+      background-size: 268px auto;
+    }
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 0;
     font-size: 0;
-    text-align: justify;
+    text-align: center;
+    background-image: none;
   }
 }
