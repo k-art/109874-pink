@@ -1,5 +1,4 @@
 .slider__toggles {
-  position: relative;
   text-align: center;
   font-size: 0;
 
@@ -12,6 +11,10 @@
   &--review {
     @media (min-width: 960px) {
       display: none;
+
+      &:before {
+        content: "werfjk";
+      }
     }
   }
 }
@@ -29,10 +32,65 @@
   border: none;
   outline: none;
 
+  &:hover {
+    background: #7e868f;
+  }
+
+  &:active {
+    background: #e9ebec;
+  }
+
+
   &--active {
     width: 12px;
     height: 12px;
     border: 3px solid #000;
     background: #fff;
+
+    &:hover {
+      background: #fff;
+    }
+
+    &:active {
+    background: #fff;
+    }
+  }
+}
+
+.slider__arrow {
+  display: none;
+
+  @media (min-width: 960px) {
+    display: block;
+    padding: 0;
+
+    position: absolute;
+    top: 25px;
+    width: 22px;
+    height: 41px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+
+    &--left {
+      left: 0;
+      background-image: url(../img/icon-review-arrow-left.svg);
+    }
+
+    &--right {
+      right: 0;
+      background-image: url(../img/icon-review-arrow-right.svg);
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 }

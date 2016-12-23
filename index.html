@@ -128,6 +128,8 @@
             <button class="slider__toggle" type="button"></button>
             <button class="slider__toggle" type="button"></button>
           </div>
+          <button class="slider__arrow slider__arrow--left" type="button"></button>
+          <button class="slider__arrow slider__arrow--right" type="button"></button>
         </div>
       </section>
 
@@ -218,17 +220,17 @@
       <section class="contacts">
         <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="contacts__container">
-          <div class="contacts-item">
+          <div class="contacts-item contacts-item--call">
             <h3 class="contacts-item__title">Звоните:</h3>
             <div class="contacts-item__content"><a href="tel:+78125556666">+7 (812) 555-66-66</a></div>
           </div>
 
-          <div class="contacts-item">
+          <div class="contacts-item contacts-item--write">
             <h3 class="contacts-item__title">Пишите:</h3>
             <div class="contacts-item__content"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
           </div>
 
-          <div class="contacts-item">
+          <div class="contacts-item contacts-item--come">
             <h3 class="contacts-item__title">Приезжайте в гости:</h3>
             <div class="contacts-item__content">ул. Большая <br>Конюшенная, 19/8</div>
           </div>
@@ -239,10 +241,12 @@
     <footer class="page-footer page-footer--main">
       <div class="page-footer__container">
         <div class="page-footer__logo">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo Pink">
-          </picture>
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo Pink">
+            </picture>
+          </a>
         </div>
         <ul class="social-list">
           <li class="social-list__item">

@@ -21,7 +21,7 @@
 
 .page-footer__logo {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   display: block;
   text-align: center;
 
@@ -30,5 +30,13 @@
     vertical-align: middle;
     width: 33.33%;
     text-align: left;
+  }
+
+  &:hover {
+    fill: $color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

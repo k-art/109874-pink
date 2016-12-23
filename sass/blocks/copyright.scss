@@ -19,8 +19,20 @@
   }
 }
 
-.copyright__link svg {
-  padding-left: 13px;
+.copyright__link {
+  padding-left: 10px;
+
+  svg {
   vertical-align: middle;
   fill: $color-pink;
+  }
+
+  &:hover  svg{
+    fill: $color-darkblue;
+  }
+
+  &:active svg{
+    fill: rgba($color-darkblue,0.3);
+  }
 }
+
