@@ -17,27 +17,6 @@
   background-color: transparent;
   outline: none;
 
-/*   &--nav-toggle {
-    position: relative;
-    z-index: 1;
-    margin-top: 22px;
-    padding: 0;
-    float: right;
-    display: block;
-    width: auto;
-    border: none;
-    border-radius: 0;
-    outline: none;
-
-    @media (min-width: 660px) {
-      margin-top: 45px;
-    }
-
-    @media (min-width: 960px) {
-      display: none;
-    }
-  } */
-
   &--download {
     display: block;
     margin: 0 auto;
@@ -53,14 +32,24 @@
       font-size: 21px;
       margin-bottom: 65px;
     }
+
+    &:hover {
+      background: #fff;
+      color: #d22856;
+    }
+
+    &:active {
+      color: rgba(#d22856, 0.3);
+    }
   }
 
   &--form {
     display: block;
+    padding: 16px;
     margin: 0 auto;
     border: none;
     border-radius: 0;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
     line-height: 30px;
     text-transform: uppercase;
     background: #2aab6d;
@@ -68,6 +57,18 @@
     @media (min-width: 660px) {
       margin: 0;
       width: 300px;
+    }
+
+    &:hover {
+      background: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(#fff, 0.3);
+    }
+
+    &:disabled {
+      background: #e5e5e5;
     }
   }
 
@@ -77,16 +78,30 @@
     display: block;
     border-color: $color-pink;
     color: $color-pink;
+
+    &:hover {
+      background: $color-pink;
+      color: #fff;
+    }
+
+    &:active {
+      color: rgba(#fff, 0.3);
+    }
   }
 
   &--gallery-form-reset {
-    border-color: rgba($color-darkblue, 0.3);
-    color: rgba($color-darkblue, 0.3);
-  }
-
-  &--non-acitve {
     border-color: rgba($color-darkblue, 0.1);
     color: rgba($color-darkblue, 0.1);
-    cursor: default;
+
+    &:hover {
+      border-color: rgba($color-darkblue, 0.3);
+      color: rgba($color-darkblue, 0.3);
+    }
+
+    &:active {
+      background: #b5b9be;
+      border-color: #b5b9be;
+      color: rgba(#fff, 0.3);
+    }
   }
 }

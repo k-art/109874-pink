@@ -111,6 +111,29 @@
   }
 }
 
+.main-nav__item--active a{
+  position: relative;
+
+  @media (min-width: 960px) {
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      padding-top: 15px;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-bottom: 2px solid #fff;
+    }
+
+    &:hover:before {
+      border-bottom: 2px solid $color-pink;
+      cursor: text;
+    }
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 22px;
@@ -206,6 +229,18 @@
       line-height: 18px;
       font-weight: 400;
       text-transform: capitalize;
+    }
+
+    &:hover {
+      color: $color-pink;
+    }
+
+    &:active {
+      color: rgba($color-pink, 0.3);
+
+      @media (min-width: 960px) {
+        color: rgba(#fff, 0.3);
+      }
     }
   }
 }
