@@ -21,9 +21,9 @@
 
       <!--  main-nav--opened
             main-nav--closed  -->
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--opened js-nav" id="nav">
         <div class="main-nav__toggle-wrapper">
-          <button class="main-nav__toggle" type="button"></button>
+          <button class="main-nav__toggle js-toggleMenu" type="button"></button>
         </div>
         <div class="main-nav__container">
           <ul class="main-nav__list">
@@ -134,7 +134,7 @@
       </section>
 
       <section class="price">
-        <div class="price__container slider">
+        <div class="price__container slider" id="price-slider">
           <table class="price-table">
             <tr class="price-table__row">
               <th class="price-table__head"></th>
@@ -286,5 +286,28 @@
       </div>
     </footer>
 
+    <script type="text/javascript">
+
+      var menu = document.getElementById('nav');
+
+      menu.classList.remove('main-nav--opened');
+      menu.classList.add('main-nav--closed');
+
+      // document.getElementById('price-slider').scrollLeft = (document.querySelector('#price-slider table').offsetWidth / 2 - 20);
+
+      document.querySelector('.js-toggleMenu').addEventListener('click', function(e){
+        // var menu = document.querySelector('.js-nav');
+
+        if (menu.classList.contains('main-nav--opened')) {
+          menu.classList.remove('main-nav--opened');
+          menu.classList.add('main-nav--closed');
+        } else {
+          menu.classList.remove('main-nav--closed');
+          menu.classList.add('main-nav--opened');
+        }
+
+        // menu.classList.toggle('main-nav--opened');
+      });
+    </script>
   </body>
 </html>
