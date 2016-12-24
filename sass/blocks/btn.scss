@@ -49,7 +49,6 @@
     margin: 0 auto;
     border: none;
     border-radius: 0;
-    margin-bottom: 37px;
     line-height: 30px;
     text-transform: uppercase;
     background: #2aab6d;
@@ -69,6 +68,18 @@
 
     &:disabled {
       background: #e5e5e5;
+    }
+  }
+
+  &--pop-up {
+    @media (min-width: 660px) {
+      margin: 0 auto;
+    }
+  }
+
+  &--pop-up-success {
+    @media (min-width: 960px) {
+      width: 460px;
     }
   }
 

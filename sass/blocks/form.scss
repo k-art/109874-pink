@@ -408,6 +408,7 @@
 
 .form__legend {
   display: block;
+  margin-top: 37px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -428,6 +429,7 @@
   }
 
   @media (min-width: 660px) {
+    margin: 0;
     align-self: center;
   }
 }
