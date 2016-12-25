@@ -12,7 +12,47 @@
 
 .form-photo__image-container {
   margin: 0 auto;
+
+  @media (min-width: 660px) {
+    margin: 0;
+  }
 }
+
+.form-photo__filters {
+  flex-basis: 320px;
+
+  @media (min-width: 660px) {
+    flex-basis: 280px;
+  }
+
+  @media (min-width: 960px) {
+    flex-basis: 410px;
+  }
+}
+
+.form-photo__btn-group {
+  display: flex;
+  flex-direction: column;
+
+  .btn {
+    margin: 0 auto;
+  }
+
+  .btn--gallery-form {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .btn {
+      width: 180px;
+      margin: 0;
+    }
+  }
+}
+
 .form-photo__file {
   display: none;
 }

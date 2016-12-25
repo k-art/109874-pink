@@ -1,6 +1,6 @@
 .price-table {
 
-/* Как лучше отцентровать таблицу на мобильном? */
+overflow: hidden;
 
   margin-bottom: 40px;
   width: 100%;
@@ -35,11 +35,39 @@
     background-color: transparent;
   }
 
+  &--hit {
+    position: relative;
+    background-image: url(../img/bg-hit.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-width: 660px) {
+      background-image: url(../img/bg-hit-tablet.svg);
+    }
+
+    &:before {
+      content: "Хит";
+      position: absolute;
+      left: 7px;
+      top: 12px;
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #fff;
+      transform: rotate(-45deg);
+
+      @media (min-width: 660px) {
+        left: 3px;
+        top: 6px;
+      }
+    }
+  }
 }
 
 .price-table__title {
   margin-top: 0;
   margin-bottom: 0;
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
