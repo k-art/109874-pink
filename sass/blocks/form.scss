@@ -230,6 +230,7 @@
   }
 
   &--contact {
+    position: relative;
 
     @media (min-width: 660px) {
       margin-bottom: 30px;
@@ -242,6 +243,31 @@
       margin-bottom: 15px;
       flex-basis: 375px;
     }
+
+    &:after {
+      position: absolute;
+      content: "1234";
+      display: block;
+      width: 60px;
+      height: 60px;
+      right: 2px;
+      top: 2px;
+      background: #e5e5e5;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:first-of-type:after {
+      background-image: url(../img/icon-phone.svg);
+    }
+
+    &:last-of-type:after {
+      background-image: url(../img/icon-mail.svg);
+    }
+  }
+
+  &--contact:after {
+
   }
 
   &--radio {

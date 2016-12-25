@@ -33,6 +33,18 @@
     }
   }
 
+  &--form {
+    padding-bottom: 50px;
+
+    @media (min-width: 660px) {
+      padding-bottom: 80px;
+    }
+
+    @media (min-width: 960px) {
+      padding-bottom: 105px;
+    }
+  }
+
   &--main {
     padding-bottom: 395px;
     margin-bottom: 270px;
@@ -108,6 +120,7 @@
 
   @media (min-width: 960px) {
     margin-top: 60px;
+    width: auto;
   }
 }
 
