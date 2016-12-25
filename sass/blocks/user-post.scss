@@ -82,11 +82,22 @@
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 15px;
+    min-height: 155px;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
     flex-wrap: wrap;
-    align-items: stretch;
-    align-content: stretch;
+    flex-basis: 100%;
+  }
+
+  &--panorama {
+    @media (min-width: 660px) {
+      min-height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
   }
 }
 
@@ -124,6 +135,7 @@
 .user-post__rating {
 
   @media (min-width: 660px) {
+    align-self: flex-end;
     display: flex;
     flex-direction: row;
 
