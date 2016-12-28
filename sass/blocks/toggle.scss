@@ -1,4 +1,4 @@
-.slider__toggles {
+.toggle {
   text-align: center;
   font-size: 0;
 
@@ -11,15 +11,11 @@
   &--review {
     @media (min-width: 960px) {
       display: none;
-
-      &:before {
-        content: "werfjk";
-      }
     }
   }
 }
 
-.slider__toggle {
+.toggle__item {
   padding: 0;
   margin: 0 8px;
   display: inline-block;
@@ -57,7 +53,7 @@
   }
 }
 
-.slider__arrow {
+.toggle-arrow {
   display: none;
 
   @media (min-width: 960px) {
@@ -74,14 +70,6 @@
     background-color: transparent;
     background-repeat: no-repeat;
     opacity: 0.6;
-
-    &--left {
-      left: 0;
-    }
-
-    &--right {
-      right: 0;
-    }
   }
 
   &:hover {
@@ -91,4 +79,12 @@
   &:active {
     opacity: 0.2;
   }
+}
+
+.toggle-arrow--left {
+  left: 0;
+}
+
+.toggle-arrow--right {
+  right: 0;
 }

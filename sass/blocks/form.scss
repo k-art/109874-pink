@@ -44,6 +44,8 @@
 }
 
 .form__group-wrapper {
+  overflow: hidden;
+
   @media (min-width: 660px) {
     display: flex;
     flex-direction: row;
