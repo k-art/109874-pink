@@ -187,8 +187,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-
-      /* как сделать чтобы элементы с чекбоксами встали как на десктопе без смены ордера?*/
+      align-items: baseline;
     }
   }
 }
@@ -228,8 +227,7 @@
 
   &--checkbox {
     @media (min-width: 960px) {
-      box-sizing: border-box;
-      flex-basis: 260px;
+      flex-basis: 200px;
 
       &:nth-child(1){
         order: 1;
@@ -249,12 +247,12 @@
 
       &:nth-child(5){
         order: 3;
-        flex-basis: 215px;
+        flex-basis: 160px;
       }
 
       &:nth-child(6){
         order: 6;
-        flex-basis: 215px;
+        flex-basis: 160px;
       }
 
       &:last-child {
