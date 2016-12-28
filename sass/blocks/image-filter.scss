@@ -1,14 +1,19 @@
 .image-filter {
   padding-top: 40px;
   padding-bottom: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   font-size: 0;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: 660px) {
     padding: 0;
+    margin-bottom: 68px;
     border: none;
+  }
+
+  @media (min-width: 960px) {
+    margin-bottom: 145px;
   }
 
   input[type="range"] {
@@ -26,16 +31,21 @@
   vertical-align: middle;
 
   @media (min-width: 660px) {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    margin: 0;
+    margin-bottom: 17px;
     display: block;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 280px;
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
     border-bottom: 1px solid #e5e5e5;
     fill: $color-pink;
     text-align: left;
   }
 
   @media (min-width: 960px) {
+    padding-top: 0;
     width: 100%;
   }
 
@@ -59,7 +69,7 @@
 .image-filter-range {
   position: absolute;
   left: -20px;
-  bottom: -30px;
+  bottom: -27px;
   width: 240px;
   height: 2px;
   background: $color-darkblue;
@@ -67,12 +77,13 @@
   @media (min-width: 660px) {
     left: auto;
     bottom: auto;
-    top: 50%;
-    right: 0;
-    width: 204px;
+    right: 18px;
+    top: 20px;
+    width: 202px;
   }
 
   @media (min-width: 960px) {
+    right: 30px;
     width: 290px;
   }
 }
@@ -83,17 +94,110 @@
   border-radius: 100%;
   display: block;
   position: absolute;
-  top: -8px;
-  left: 50%;
-  height: 14px;
-  width: 14px;
+  top: -6px;
+  left: 80%;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+
+  @media (min-width: 660px) {
+    &--crop {
+      left: 72%;
+    }
+
+    &--fill {
+      left: 12.5%;
+    }
+
+    &--contrast {
+      left: 48%;
+    }
+  }
+
+  @media (min-width: 960px) {
+    &--crop {
+      left: 24%;
+    }
+
+    &--fill {
+      left: 85%;
+    }
+
+    &--contrast {
+      left: 55%;
+    }
+  }
+
+  &:active {
+    background: $color-pink;
+  }
 }
 
 .image-filter__btn {
   padding: 0;
   font-size: 0;
+  width: 48px;
+  height: 48px;
   border: none;
   cursor: pointer;
   background: none;
   outline: none;
+
+    @media (min-width: 660px) {
+      padding-left: 5px;
+      width: 24px;
+      height: 24px;
+    }
+
+  @media (min-width: 960px) {
+    padding-left: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  svg {
+    fill: #b5b9be;
+
+    @media (min-width: 660px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: 960px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &--contrast {
+    line-height: 24px;
+
+    @media (min-width: 660px) {
+      padding-left: 12px;
+    }
+
+    @media (min-width: 660px) {
+      padding-left: 0;
+    }
+
+    svg {
+      @media (min-width: 660px) {
+        width: 16px;
+        height: 16px;
+      }
+
+      @media (min-width: 960px) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &:hover svg{
+      fill: #8d949b;
+    }
+
+  &:active svg{
+      fill: $color-pink;
+    }
 }

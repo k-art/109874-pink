@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +13,7 @@
         <path fill="#2E368F" d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/>
       </symbol>
       <symbol id="icon-editor-contrast" viewBox="-35.422 -7.96 31.92 31.92">
-        <path fill="#231F20" d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
+        <path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
       </symbol>
       <symbol id="icon-editor-crop" viewBox="0 0 48 48">
         <path fill="none" d="M0 0h48v48H0V0z"/>
@@ -125,21 +126,21 @@
           <ul class="download__list">
             <li class="download__item">
               <a class="download__link" href="https://www.apple.com/itunes/" title="Apple Store">
-                <svg width="46.21px" height="56.753px">
+                <svg width="46.21" height="56.753">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-apple"></use>
                 </svg>
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://play.google.com/store" title="Google Play">
-                <svg width="42.084px" height="47.041px">
+                <svg width="42.084" height="47.041">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-android"></use>
                 </svg>
               </a>
             </li>
             <li class="download__item">
               <a class="download__link" href="https://www.microsoft.com/en-us/store/apps" title="Microsoft Store">
-                <svg width="43.922px" height="41.992px">
+                <svg width="43.922" height="41.992">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-microsoft"></use>
                 </svg>
               </a>
@@ -203,20 +204,20 @@
             <button class="slider__toggle" type="button"></button>
           </div>
           <button class="slider__arrow slider__arrow--left" type="button">
-            <svg width="21.706px" height="41.719px">
+            <svg width="21.706" height="41.719">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-left"></use>
             </svg>
           </button>
           <button class="slider__arrow slider__arrow--right" type="button">
-            <svg width="21.706px" height="41.719px">
+            <svg width="21.706" height="41.719">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-right"></use>
             </svg>
           </button>
         </div>
       </section>
 
-      <section class="price">
-        <div class="price__container slider" id="price-slider">
+      <section class="price slider">
+        <div class="price__container" id="price-slider">
           <table class="price-table">
             <tr class="price-table__row">
               <th class="price-table__head"></th>
@@ -236,17 +237,17 @@
             <tr class="price-table__row">
               <td class="price-table__cell">Розовый фильтр</td>
               <td class="price-table__cell price-table__cell--yes">Розовый фильтр
-                <svg width="21.698px" height="16.09px">
+                <svg width="21.698" height="16.09">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                 </svg>
               </td>
               <td class="price-table__cell price-table__cell--yes">Розовый фильтр
-                <svg width="21.698px" height="16.09px">
+                <svg width="21.698" height="16.09">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                 </svg>
               </td>
               <td class="price-table__cell price-table__cell--yes">Розовый фильтр
-                <svg width="21.698px" height="16.09px">
+                <svg width="21.698" height="16.09">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                 </svg>
               </td>
@@ -254,17 +255,17 @@
             <tr class="price-table__row">
               <td class="price-table__cell">Смайлики</td>
               <td class="price-table__cell price-table__cell--no">Смайлики
-                <svg width="26.752px" height="26.752px">
+                <svg width="26.752" height="26.752">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="price-table__cell price-table__cell--yes">Смайлики
-                <svg width="21.698px" height="16.09px">
+                <svg width="21.698" height="16.09">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                 </svg>
               </td>
               <td class="price-table__cell price-table__cell--yes">Смайлики
-                <svg width="21.698px" height="16.09px">
+                <svg width="21.698" height="16.09">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                 </svg>
               </td>
@@ -272,17 +273,17 @@
             <tr class="price-table__row">
               <td class="price-table__cell">Комментарии</td>
               <td class="price-table__cell price-table__cell--no">Комментарии
-                <svg width="26.752px" height="26.752px">
+                <svg width="26.752" height="26.752">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="price-table__cell price-table__cell--no">Комментарии
-                <svg width="26.752px" height="26.752px">
+                <svg width="26.752" height="26.752">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use>
                 </svg>
               </td>
               <td class="price-table__cell price-table__cell--yes">Комментарии
-                <svg width="21.698px" height="16.09px">
+                <svg width="21.698" height="16.09">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use>
                 </svg>
               </td>
@@ -326,31 +327,29 @@
     <footer class="page-footer page-footer--main">
       <div class="page-footer__container">
         <div class="page-footer__logo">
-          <a href="#">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-              <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo Pink">
-            </picture>
-          </a>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo Pink">
+          </picture>
         </div>
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#" title="Twitter">
-              <svg width="17.5px" height="14.663px">
+              <svg width="17.5" height="14.663">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--facebook" href="#" title="Facebook">
-              <svg width="8.673px" height="18.944px">
+              <svg width="8.673" height="18.944">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--youtube" href="#" title="Youtube">
-              <svg width="14.64px" height="13.96px">
+              <svg width="14.64" height="13.96">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
               </svg>
             </a>
@@ -359,7 +358,7 @@
         <div class="copyright">
           <span>Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/" title="HTML Academy">
-            <svg width="26.943px" height="34.09px">
+            <svg width="26.943" height="34.09">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>

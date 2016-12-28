@@ -95,11 +95,6 @@
 
     @media (min-width: 960px) {
       padding-top: 35px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-basis: 920px;
-      /* работает только в firefox */
     }
   }
 
@@ -124,6 +119,7 @@
     @media (min-width: 960px) {
       padding-top: 50px;
       padding-bottom: 10px;
+      padding-right: 40px;
     }
   }
 
@@ -191,9 +187,16 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-
-      /* как сделать чтобы элементы с чекбоксами встали как на десктопе без смены ордера?*/
+      align-items: baseline;
     }
+  }
+}
+
+.form__contacts-wrapper {
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -224,8 +227,37 @@
 
   &--checkbox {
     @media (min-width: 960px) {
-      box-sizing: border-box;
-      flex-basis: 260px;
+      flex-basis: 200px;
+
+      &:nth-child(1){
+        order: 1;
+      }
+
+      &:nth-child(2){
+        order: 4;
+      }
+
+      &:nth-child(3){
+        order: 2;
+      }
+
+      &:nth-child(4){
+        order: 5;
+      }
+
+      &:nth-child(5){
+        order: 3;
+        flex-basis: 160px;
+      }
+
+      &:nth-child(6){
+        order: 6;
+        flex-basis: 160px;
+      }
+
+      &:last-child {
+        margin-bottom: 47px;
+      }
     }
   }
 
@@ -251,10 +283,14 @@
       width: 60px;
       height: 60px;
       right: 2px;
-      top: 2px;
+      bottom: 2px;
       background: #e5e5e5;
       background-repeat: no-repeat;
       background-position: center;
+
+      @media (min-width: 660px) {
+        top: 2px;
+      }
     }
 
     &:first-of-type:after {
@@ -266,10 +302,6 @@
     }
   }
 
-  &--contact:after {
-
-  }
-
   &--radio {
     margin-bottom: 44px;
 
@@ -278,7 +310,7 @@
     }
 
     @media (min-width: 960px) {
-      padding-left: 110px;
+      margin-left: 55px;
     }
   }
 
@@ -354,6 +386,14 @@
       margin-bottom: 0;
       margin-top: 7px;
     }
+
+    b {
+      font-weight: 400;
+
+      @media (min-width: 660px) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -361,6 +401,7 @@
   box-sizing: border-box;
   padding: 15px 20px;
   width: 100%;
+  min-height: 64px;
   font-size: 18px;
   line-height: 30px;
   color: $color-darkblue;

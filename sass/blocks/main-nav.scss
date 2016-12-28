@@ -6,7 +6,7 @@
 
   @media (min-width: 960px) {
     padding-top: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 26px;
   }
 
   &--closed {
@@ -150,6 +150,7 @@
 
   @media (min-width: 660px) {
     top: -10px;
+    right: 0;
   }
 
   @media (min-width: 960px) {
@@ -179,7 +180,7 @@
   margin: 0 auto;
 
   @media (min-width: 960px) {
-    @include container;
+    width: 940px;
     @include clearfix;
   }
 }
@@ -203,6 +204,7 @@
 
   @media (min-width: 960px) {
     margin-left: 80px;
+    margin-bottom: 20px;
     display: inline-block;
     font-size: 18px;
     vertical-align: baseline;
