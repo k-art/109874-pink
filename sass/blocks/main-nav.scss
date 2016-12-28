@@ -150,6 +150,7 @@
 
   @media (min-width: 660px) {
     top: -10px;
+    right: 0;
   }
 
   @media (min-width: 960px) {
@@ -179,7 +180,7 @@
   margin: 0 auto;
 
   @media (min-width: 960px) {
-    @include container;
+    width: 940px;
     @include clearfix;
   }
 }

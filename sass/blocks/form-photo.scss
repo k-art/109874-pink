@@ -1,12 +1,8 @@
 .form-photo {
-  padding-top: 20px;
-  padding-bottom: 40px;
-  background: #f2f2f2;
 
   @media (min-width: 660px) {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -16,13 +12,17 @@
   @media (min-width: 660px) {
     margin: 0;
   }
+
+  @media (min-width: 960px) {
+  }
 }
 
 .form-photo__filters {
   flex-basis: 320px;
 
   @media (min-width: 660px) {
-    flex-basis: 280px;
+    flex-basis: 275px;
+    box-sizing: border-box;
   }
 
   @media (min-width: 960px) {
@@ -34,22 +34,9 @@
   display: flex;
   flex-direction: column;
 
-  .btn {
-    margin: 0 auto;
-  }
-
-  .btn--gallery-form {
-    margin-bottom: 15px;
-  }
-
   @media (min-width: 960px) {
     flex-direction: row;
     justify-content: space-between;
-
-    .btn {
-      width: 180px;
-      margin: 0;
-    }
   }
 }
 

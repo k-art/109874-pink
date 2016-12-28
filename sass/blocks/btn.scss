@@ -87,8 +87,20 @@
     margin: 0 auto;
     margin-bottom: 15px;
     display: block;
+    width: 280px;
     border-color: $color-pink;
     color: $color-pink;
+
+    @media (min-width: 660px) {
+      width: 260px;
+      margin: 0;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: 960px) {
+      width: 180px;
+      margin: 0;
+    }
 
     &:hover {
       background: $color-pink;
@@ -101,10 +113,13 @@
   }
 
   &--gallery-form-reset {
+    margin-bottom: 0;
+
     border-color: rgba($color-darkblue, 0.1);
     color: rgba($color-darkblue, 0.1);
 
     &:hover {
+      background: transparent;
       border-color: rgba($color-darkblue, 0.3);
       color: rgba($color-darkblue, 0.3);
     }

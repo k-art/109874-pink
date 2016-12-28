@@ -23,7 +23,7 @@ overflow: hidden;
 
   @media (min-width: 660px) {
     padding: 5px;
-    min-width: 25%;
+    width: 25%;
     height: 80px;
   }
 
@@ -45,6 +45,10 @@ overflow: hidden;
       background-image: url(../img/bg-hit-tablet.svg);
     }
 
+    @media (min-width: 960px) {
+      background-image: url(../img/bg-hit.svg);
+    }
+
     &:before {
       content: "Хит";
       position: absolute;
@@ -60,6 +64,17 @@ overflow: hidden;
         left: 3px;
         top: 6px;
       }
+
+      @media (min-width: 960px) {
+        left: 7px;
+        top: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 659px) {
+    &:nth-child(1) {
+      display: none;
     }
   }
 }
@@ -116,9 +131,13 @@ overflow: hidden;
     height: 25px;
 
     @media (min-width: 660px) {
-      top: 10px;
+      top: 7px;
       right: 50%;
       margin-right: -15px;
+    }
+
+    @media (min-width: 960px) {
+      top: 15px;
     }
   }
 
@@ -131,6 +150,12 @@ overflow: hidden;
   &--no {
     svg {
       fill: #f25b26;
+    }
+  }
+
+  @media (max-width: 659px) {
+    &:nth-child(1) {
+      display: none;
     }
   }
 
